@@ -22,14 +22,22 @@
 
 ## Featured Projects
 
+### Core Platform
 | Project | Description | Tech |
 |---------|-------------|------|
-| [aeos-api](https://github.com/jmanu1983/aeos-api) | REST API gateway for Nedap AEOS access control | Python, Flask, Zeep |
+| [aeos-dashboard](https://github.com/jmanu1983/aeos-dashboard) | **Real-time monitoring dashboard** with live event feed, door status & alerts | Flask, SQL Server, WebSocket, Chart.js |
+| [badge-lifecycle-manager](https://github.com/jmanu1983/badge-lifecycle-manager) | **Badge lifecycle API** — provision, assign, suspend, revoke with full audit trail | FastAPI, SQLAlchemy, SQL Server |
+| [access-log-analyzer](https://github.com/jmanu1983/access-log-analyzer) | **Security analytics** — anomaly detection, tailgating alerts, HTML reports | Python, Pandas, SQL Server |
+
+### Integration & Automation
+| Project | Description | Tech |
+|---------|-------------|------|
+| [aeos-api](https://github.com/jmanu1983/aeos-api) | REST API gateway for Nedap AEOS access control | Flask, Zeep, MSAL |
 | [aeos-web-client](https://github.com/jmanu1983/aeos-web-client) | Browser-based SOAP client for AEOS | HTML, JS, CSS |
-| [key-diversification](https://github.com/jmanu1983/key-diversification) | AES/CMAC key diversification tool (NXP AN10922) | Python, PyCryptodome |
 | [aeos-import-automation](https://github.com/jmanu1983/aeos-import-automation) | Production automation for AEOS contractor imports | PowerShell, SQL Server |
-| [csv-to-excel-converter](https://github.com/jmanu1983/csv-to-excel-converter) | Batch CSV to Excel converter | PowerShell |
+| [key-diversification](https://github.com/jmanu1983/key-diversification) | AES/CMAC key diversification tool (NXP AN10922) | Python, PyCryptodome |
 | [security-engineering-tools](https://github.com/jmanu1983/security-engineering-tools) | Collection of security engineering utilities | Python, PowerShell |
+| [csv-to-excel-converter](https://github.com/jmanu1983/csv-to-excel-converter) | Batch CSV to Excel converter | PowerShell |
 
 ## GitHub Stats
 
