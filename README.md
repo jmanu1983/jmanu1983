@@ -6,6 +6,7 @@
 
 - 🔐 Je conçois et intègre des **systèmes de contrôle d'accès** (Nedap AEOS, DESFire, Wiegand)
 - 🏗️ Je développe des outils d'automatisation pour les déploiements de sécurité à grande échelle
+- 📅 J'intègre **Microsoft Graph / Outlook** avec les systèmes de sécurité physique
 - 🌍 Basé à **Genève, Suisse**
 - 💼 Ingénierie de sécurité physique pour des infrastructures critiques
 
@@ -16,6 +17,7 @@
 | **Langages** | Python, PowerShell, JavaScript, SQL |
 | **Contrôle d'accès** | Nedap AEOS, APIs SOAP/REST, MIFARE DESFire, Wiegand |
 | **Backend** | Flask, FastAPI, SQL Server, SQLite |
+| **Cloud** | Microsoft Graph API, MSAL, Azure AD, Outlook Calendars |
 | **Automatisation** | Planificateur de tâches Windows, SSH, Import en masse |
 | **Cryptographie** | AES-128, CMAC, Diversification de clés (NXP AN10922) |
 | **Data** | Pandas, NumPy, Chart.js, détection d'anomalies |
@@ -26,9 +28,10 @@
 ### Plateforme
 | Projet | Description | Tech |
 |--------|-------------|------|
-| [aeos-dashboard](https://github.com/jmanu1983/aeos-dashboard) | **Dashboard de supervision temps réel** avec flux d'événements live, état des portes et alertes | Flask, SQL Server, WebSocket, Chart.js |
-| [badge-lifecycle-manager](https://github.com/jmanu1983/badge-lifecycle-manager) | **API de gestion du cycle de vie des badges** — provisionnement, attribution, suspension, révocation avec piste d'audit | FastAPI, SQLAlchemy, SQL Server |
-| [access-log-analyzer](https://github.com/jmanu1983/access-log-analyzer) | **Analyse de sécurité** — détection d'anomalies, alertes tailgating, rapports HTML | Python, Pandas, SQL Server |
+| [room-access-manager](https://github.com/jmanu1983/room-access-manager) | **Accès automatisé par calendrier Outlook** — Graph API + AEOS SOAP : accorde/révoque l'accès physique selon les réunions | Flask, MSAL, Graph API, Zeep, AEOS SOAP |
+| [aeos-dashboard](https://github.com/jmanu1983/aeos-dashboard) | **Dashboard temps réel** — SOAP `findEvent` + vue SQL `vw_AeosEventLog`, WebSocket push | Flask, Zeep, SQL Server, SocketIO, Chart.js |
+| [badge-lifecycle-manager](https://github.com/jmanu1983/badge-lifecycle-manager) | **Cycle de vie des badges** — provisionnement → révocation, sync `dbo.[import]` AEOS | FastAPI, SQLAlchemy, SQL Server, pyodbc |
+| [access-log-analyzer](https://github.com/jmanu1983/access-log-analyzer) | **Analyse de sécurité** — Z-score, tailgating, rapports HTML, vue `vw_AeosEventLog` | Python, Pandas, NumPy, SQL Server |
 
 ### Intégration & automatisation
 | Projet | Description | Tech |
