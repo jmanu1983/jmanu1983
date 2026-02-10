@@ -28,6 +28,8 @@
 ### Plateforme
 | Projet | Description | Tech |
 |--------|-------------|------|
+| [visitor-kiosk](https://github.com/jmanu1983/visitor-kiosk) | **Borne visiteurs self-service** — enregistrement, QR code AEOS pour lecteur Nedap Invite, notification au contact | Flask, Zeep, qrcode, AEOS SOAP |
+| [evacuation-manager](https://github.com/jmanu1983/evacuation-manager) | **Gestionnaire d'évacuation temps réel** — mustering, `findCarrierPresence`, roll-call, personnes manquantes | Flask, SocketIO, Zeep, AEOS SOAP |
 | [room-access-manager](https://github.com/jmanu1983/room-access-manager) | **Accès automatisé par calendrier Outlook** — Graph API + AEOS SOAP : accorde/révoque l'accès physique selon les réunions | Flask, MSAL, Graph API, Zeep, AEOS SOAP |
 | [aeos-dashboard](https://github.com/jmanu1983/aeos-dashboard) | **Dashboard temps réel** — SOAP `findEvent` + vue SQL `vw_AeosEventLog`, WebSocket push | Flask, Zeep, SQL Server, SocketIO, Chart.js |
 | [badge-lifecycle-manager](https://github.com/jmanu1983/badge-lifecycle-manager) | **Cycle de vie des badges** — provisionnement → révocation, sync `dbo.[import]` AEOS | FastAPI, SQLAlchemy, SQL Server, pyodbc |
